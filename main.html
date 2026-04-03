@@ -892,6 +892,13 @@
 
             // Add timeout wrapper for fetch requests
             const fetchWithTimeout = (url, options, timeout = 15000) => {
+                options = options || {};
+                options.headers = {
+                    ...options.headers,
+                    'ngrok-skip-browser-warning': '1',
+                    'bypass-tunnel-reminder': '1'
+                };
+                
                 return Promise.race([
                     fetch(url, options),
                     new Promise((_, reject) => 
