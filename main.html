@@ -1374,8 +1374,12 @@
         }
 
         async function fetchModelNames() {
+            const headers = { 
+                'ngrok-skip-browser-warning': '1', 
+                'bypass-tunnel-reminder': '1' 
+            };
             try {
-                const res1 = await fetch(`${backend1}/health`);
+                const res1 = await fetch(`${backend1}/health`, { headers });
                 if (res1.ok) {
                     const data1 = await res1.json();
                     if (data1.ckpt) {
@@ -1388,7 +1392,7 @@
             }
 
             try {
-                const res2 = await fetch(`${backend2}/health`);
+                const res2 = await fetch(`${backend2}/health`, { headers });
                 if (res2.ok) {
                     const data2 = await res2.json();
                     if (data2.ckpt) {
