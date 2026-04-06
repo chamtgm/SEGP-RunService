@@ -224,8 +224,8 @@
                             <button id="nn-prev-1" class="px-2 py-1 text-[10px] font-bold rounded-lg border border-outline-variant/30 dark:border-slate-700 text-on-surface-variant dark:text-slate-300 disabled:opacity-40" disabled>Prev</button>
                             <span id="nn-slide-label-1" class="text-[10px] bg-primary/10 dark:bg-indigo-500/20 text-primary dark:text-indigo-300 px-2 py-1 rounded-lg font-bold uppercase tracking-wide">0/0</span>
                             <button id="nn-next-1" class="px-2 py-1 text-[10px] font-bold rounded-lg border border-outline-variant/30 dark:border-slate-700 text-on-surface-variant dark:text-slate-300 disabled:opacity-40" disabled>Next</button>
-                            <button onclick="toggleTsneImgFullscreen(1)" class="p-1.5 flex items-center justify-center bg-white dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 rounded-lg transition-colors text-slate-600 dark:text-slate-300 focus:outline-none shadow-sm" title="Full Screen">
-                                <span id="tsne-img-fs-icon-1" class="material-symbols-outlined text-base leading-none">fullscreen</span>
+                            <button onclick="toggleTsneImgFullscreen(1)" class="p-1 text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200 transition-colors focus:outline-none" title="Full Screen">
+                                <span id="tsne-img-fs-icon-1" class="material-symbols-outlined text-sm leading-none">fullscreen</span>
                             </button>
                         </div>
                     </div>
@@ -244,6 +244,9 @@
                     <div class="flex items-center justify-between">
                         <h4 class="text-xs font-bold text-on-surface dark:text-slate-200 uppercase tracking-widest">Model 1 · Nearest Neighbors</h4>
                         <div class="flex items-center gap-2">
+                            <button id="tsne-prev-1" class="px-2 py-1 text-[10px] font-bold rounded-lg border border-outline-variant/30 dark:border-slate-700 text-on-surface-variant dark:text-slate-300 disabled:opacity-40" disabled>Prev</button>
+                            <span id="tsne-slide-label-1" class="text-[10px] bg-primary/10 dark:bg-indigo-500/20 text-primary dark:text-indigo-300 px-2 py-1 rounded-lg font-bold uppercase tracking-wide hidden sm:block">0/0</span>
+                            <button id="tsne-next-1" class="px-2 py-1 text-[10px] font-bold rounded-lg border border-outline-variant/30 dark:border-slate-700 text-on-surface-variant dark:text-slate-300 disabled:opacity-40" disabled>Next</button>
                             <span class="text-[10px] bg-primary/10 dark:bg-indigo-500/20 text-primary dark:text-indigo-300 px-2 py-1 rounded-lg font-bold uppercase tracking-wide hidden sm:block">Interactive Map</span>
                             <button onclick="toggleTsneFullscreen(1)" class="p-1.5 flex items-center justify-center bg-white dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 rounded-lg transition-colors text-slate-600 dark:text-slate-300 focus:outline-none shadow-sm" title="Full Screen">
                                 <span id="tsne-fs-icon-1" class="material-symbols-outlined text-base leading-none">fullscreen</span>
@@ -303,8 +306,8 @@
                             <button id="nn-prev-2" class="px-2 py-1 text-[10px] font-bold rounded-lg border border-outline-variant/30 dark:border-slate-700 text-on-surface-variant dark:text-slate-300 disabled:opacity-40" disabled>Prev</button>
                             <span id="nn-slide-label-2" class="text-[10px] bg-teal-500/10 dark:bg-teal-500/20 text-teal-700 dark:text-teal-300 px-2 py-1 rounded-lg font-bold uppercase tracking-wide">0/0</span>
                             <button id="nn-next-2" class="px-2 py-1 text-[10px] font-bold rounded-lg border border-outline-variant/30 dark:border-slate-700 text-on-surface-variant dark:text-slate-300 disabled:opacity-40" disabled>Next</button>
-                            <button onclick="toggleTsneImgFullscreen(2)" class="p-1.5 flex items-center justify-center bg-white dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 rounded-lg transition-colors text-slate-600 dark:text-slate-300 focus:outline-none shadow-sm" title="Full Screen">
-                                <span id="tsne-img-fs-icon-2" class="material-symbols-outlined text-base leading-none">fullscreen</span>
+                            <button onclick="toggleTsneImgFullscreen(2)" class="p-1 text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200 transition-colors focus:outline-none" title="Full Screen">
+                                <span id="tsne-img-fs-icon-2" class="material-symbols-outlined text-sm leading-none">fullscreen</span>
                             </button>
                         </div>
                     </div>
@@ -323,6 +326,9 @@
                     <div class="flex items-center justify-between">
                         <h4 class="text-xs font-bold text-on-surface dark:text-slate-200 uppercase tracking-widest">Model 2 · Nearest Neighbors</h4>
                         <div class="flex items-center gap-2">
+                            <button id="tsne-prev-2" class="px-2 py-1 text-[10px] font-bold rounded-lg border border-outline-variant/30 dark:border-slate-700 text-on-surface-variant dark:text-slate-300 disabled:opacity-40" disabled>Prev</button>
+                            <span id="tsne-slide-label-2" class="text-[10px] bg-teal-500/10 dark:bg-teal-500/20 text-teal-700 dark:text-teal-300 px-2 py-1 rounded-lg font-bold uppercase tracking-wide hidden sm:block">0/0</span>
+                            <button id="tsne-next-2" class="px-2 py-1 text-[10px] font-bold rounded-lg border border-outline-variant/30 dark:border-slate-700 text-on-surface-variant dark:text-slate-300 disabled:opacity-40" disabled>Next</button>
                             <span class="text-[10px] bg-teal-500/10 dark:bg-teal-500/20 text-teal-700 dark:text-teal-300 px-2 py-1 rounded-lg font-bold uppercase tracking-wide hidden sm:block">Interactive Map</span>
                             <button onclick="toggleTsneFullscreen(2)" class="p-1.5 flex items-center justify-center bg-white dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 rounded-lg transition-colors text-slate-600 dark:text-slate-300 focus:outline-none shadow-sm" title="Full Screen">
                                 <span id="tsne-fs-icon-2" class="material-symbols-outlined text-base leading-none">fullscreen</span>
@@ -584,19 +590,28 @@
         function resetNnSlide(modelNum) {
             nnSlideState[modelNum] = { items: [], index: 0, globalTsne: null };
             const label = document.getElementById(`nn-slide-label-${modelNum}`);
+            const tsneLabel = document.getElementById(`tsne-slide-label-${modelNum}`);
             const prevBtn = document.getElementById(`nn-prev-${modelNum}`);
             const nextBtn = document.getElementById(`nn-next-${modelNum}`);
+            const tsnePrevBtn = document.getElementById(`tsne-prev-${modelNum}`);
+            const tsneNextBtn = document.getElementById(`tsne-next-${modelNum}`);
             if (label) label.textContent = '0/0';
+            if (tsneLabel) tsneLabel.textContent = '0/0';
             if (prevBtn) prevBtn.disabled = true;
             if (nextBtn) nextBtn.disabled = true;
+            if (tsnePrevBtn) tsnePrevBtn.disabled = true;
+            if (tsneNextBtn) tsneNextBtn.disabled = true;
         }
 
         function renderNnSlide(modelNum) {
             const state = nnSlideState[modelNum] || { items: [], index: 0, globalTsne: null };
             const items = Array.isArray(state.items) ? state.items : [];
             const label = document.getElementById(`nn-slide-label-${modelNum}`);
+            const tsneLabel = document.getElementById(`tsne-slide-label-${modelNum}`);
             const prevBtn = document.getElementById(`nn-prev-${modelNum}`);
             const nextBtn = document.getElementById(`nn-next-${modelNum}`);
+            const tsnePrevBtn = document.getElementById(`tsne-prev-${modelNum}`);
+            const tsneNextBtn = document.getElementById(`tsne-next-${modelNum}`);
             const tsneImg = document.getElementById(`tsne-image-target-${modelNum}`);
             const nnListEl = document.getElementById(`nn-list-${modelNum}`);
             const nnItemsEl = document.getElementById(`nn-items-${modelNum}`);
@@ -604,8 +619,11 @@
 
             if (!items.length) {
                 if (label) label.textContent = '0/0';
+                if (tsneLabel) tsneLabel.textContent = '0/0';
                 if (prevBtn) prevBtn.disabled = true;
                 if (nextBtn) nextBtn.disabled = true;
+                if (tsnePrevBtn) tsnePrevBtn.disabled = true;
+                if (tsneNextBtn) tsneNextBtn.disabled = true;
                 if (tsneImg) {
                     tsneImg.style.display = 'none';
                     tsneImg.src = '';
@@ -626,8 +644,11 @@
 
             const cls = slide.majority_class || 'Unknown';
             if (label) label.textContent = `${idx + 1}/${items.length} · ${cls}`;
+            if (tsneLabel) tsneLabel.textContent = `${idx + 1}/${items.length} · ${cls}`;
             if (prevBtn) prevBtn.disabled = idx <= 0;
+            if (tsnePrevBtn) tsnePrevBtn.disabled = idx <= 0;
             if (nextBtn) nextBtn.disabled = idx >= items.length - 1;
+            if (tsneNextBtn) tsneNextBtn.disabled = idx >= items.length - 1;
 
             const tsne = state.globalTsne || slide.tsne_plot_base64 || null;
             if (tsneImg) {
@@ -698,25 +719,39 @@
             [1, 2].forEach((modelNum) => {
                 const prevBtn = document.getElementById(`nn-prev-${modelNum}`);
                 const nextBtn = document.getElementById(`nn-next-${modelNum}`);
+                const tsnePrevBtn = document.getElementById(`tsne-prev-${modelNum}`);
+                const tsneNextBtn = document.getElementById(`tsne-next-${modelNum}`);
+
+                const handlePrev = () => {
+                    const state = nnSlideState[modelNum];
+                    if (!state || !state.items.length) return;
+                    state.index = Math.max(0, state.index - 1);
+                    renderNnSlide(modelNum);
+                };
+
+                const handleNext = () => {
+                    const state = nnSlideState[modelNum];
+                    if (!state || !state.items.length) return;
+                    state.index = Math.min(state.items.length - 1, state.index + 1);
+                    renderNnSlide(modelNum);
+                };
 
                 if (prevBtn && !prevBtn.dataset.bound) {
-                    prevBtn.addEventListener('click', () => {
-                        const state = nnSlideState[modelNum];
-                        if (!state || !state.items.length) return;
-                        state.index = Math.max(0, state.index - 1);
-                        renderNnSlide(modelNum);
-                    });
+                    prevBtn.addEventListener('click', handlePrev);
                     prevBtn.dataset.bound = '1';
+                }
+                if (tsnePrevBtn && !tsnePrevBtn.dataset.bound) {
+                    tsnePrevBtn.addEventListener('click', handlePrev);
+                    tsnePrevBtn.dataset.bound = '1';
                 }
 
                 if (nextBtn && !nextBtn.dataset.bound) {
-                    nextBtn.addEventListener('click', () => {
-                        const state = nnSlideState[modelNum];
-                        if (!state || !state.items.length) return;
-                        state.index = Math.min(state.items.length - 1, state.index + 1);
-                        renderNnSlide(modelNum);
-                    });
+                    nextBtn.addEventListener('click', handleNext);
                     nextBtn.dataset.bound = '1';
+                }
+                if (tsneNextBtn && !tsneNextBtn.dataset.bound) {
+                    tsneNextBtn.addEventListener('click', handleNext);
+                    tsneNextBtn.dataset.bound = '1';
                 }
             });
         }
